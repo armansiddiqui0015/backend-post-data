@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style/style.css">
+</head>
+<body>
+  <div style="display: flex; justify-content: flex-end;">
+    <a href="/logout" class="btn" style="margin-top: 5px; margin-right: 20px; background-color: red;">Logout</a>
+
+  </div>
+    <div style="padding: 20px; color:  white;">
+        <h2><span style="color: orange; font-family: cursive;">Hello'</span> &nbsp; <%= user.name%> 👋🏻</h2><br>
+        <h3>You can Create a new post</h3><br>
+        <form action="/post" method="post">
+                 <textarea type="text" placeholder="Whats Your on mind!" name="content"></textarea>
+                <br>
+                 <button style="margin-top: 5px;" class="btn" type="submit">submit</button>
+        </form>
+        <br><br>
+
+        <h2>Posts :-</h2>
+        <br>
+        <div style="margin-top: 10px;;">
+
+          <%user.posts.reverse().forEach((post) =>{%>
+            <div class="card" style="width: 26rem; margin-top: 10px; background-color: #444242;  padding: 10px;
+            border-radius: 10px;">
+                  <h3 class="card-title" style="color: rgb(87, 87, 254);">@<%=user.username%></h3>
+                  <br>
+                  <p class="card-text"><%=post.content%></p>
+                <div style="margin-top: 10px;">
+                  <a href="" style="color: rgb(87, 87, 254); text-decoration: none;">Like</a>
+                  <a href="" style="margin-left: 10px;color: rgb(87, 87, 254);text-decoration: none;">Edit</a>
+                </div>
+              </div>
+            <%})%>
+        </div>
+  </div>
+</body>
+</html>

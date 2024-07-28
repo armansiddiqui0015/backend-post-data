@@ -1,0 +1,105 @@
+
+*{
+    margin: 0;
+}
+body{
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.live{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background: #333;
+    color: aliceblue;
+}
+.inputt{
+    width: 90%;
+    background: none;
+    border: none;
+    border-bottom: 2px solid white;
+    padding: 20px;
+    margin-top: 10px;
+    outline: none;
+    color: white;
+}
+button{
+    margin-top: 50px;
+    padding: 10px 15px;
+    background-color: rgb(4, 144, 4);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.container{
+    height: 300px;
+    width: 200px;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    box-shadow:  0px 0px 5px 5px #515151;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+.main{
+    height: 200px;
+    width: 200px;
+    background-color: black;
+    overflow: hidden;
+}
+h3{
+    margin-top: 10px;
+}
+h5{
+    margin-top: 1px;
+}
+.a1{
+    margin-left: 0px;
+    text-decoration: none;
+    padding: 6px 9px;
+    background-color:cyan;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.a2{
+    text-decoration: none;
+    margin-left: 60px;
+    padding: 6px 9px;
+    background-color: red;
+    color: rgb(253, 252, 251);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.imgh{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+textarea{
+    width: 250px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid white;
+    padding: 10px;
+    margin-top: 10px;
+    outline: none;
+    color: white;
+}
+h2{
+    font-family: Helvetica, sans-serif,
+}
+
+.btn{
+    margin-top: 50px;
+    padding: 10px 15px;
+    background-color: rgb(4, 144, 4);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer; 
+}
